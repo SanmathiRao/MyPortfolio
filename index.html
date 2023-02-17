@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/870081ed01.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+        <div class="container"> 
+            <nav>
+                <!---<img src="images/logo.png" class="logo">--->
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                   <!----- <li><a href="#">Protfolio</a></li>---> 
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span> Sanmathi</span></h1>
+            </div>
+        </div>
+    </div>
+    <!------------about-------------->
+    <div id="about"></div>  
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class=" sub-title">About Me</h1>
+                <p>A passionate and results-driven Master of Science in Computer Science graduate. Equipped with expertise in Python, HTML, CSS, SQL, Git, Docker, Linux, and AWS services, as well as a solid foundation in object-oriented programming and operating systems. Committed to delivering outstanding software solutions and driving organizational success.
+                    I am a collaborative team player who is able to work independently and as part of a team, with excellent communication and problem-solving skills. I am always seeking new challenges and opportunities to grow as a professional.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('exprience')" >Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programing Languages</span><br>C++, Python, SQL, JavaScript, HTML, CSS</li>
+                            <li><span>Relevant Coursework</span><br>Operating Systems, Algorithms, Data Structure, Object Oriented Programming, Artificial
+                                Intelligence</li>
+                            <li><span>Technical Skills</span><br>AWS, Docker, Linux, Git, TensorFlow , OpenCV, NumPy, REST AP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exprience">
+                        <ul>
+                            <li><span>Machine Learning Engineer Intern </span><br>AI-Bharath
+                            <p>• Developed AI/ML-based cancer detection application for a stealth mode startup focused on medical applications <br>
+                               • The application was designed using Panda, NumPy, and TensorFlow.The project also included an extensive
+                                collection of datasets, training/testing of datasets, and validation.
+                                </p></li>
+                            <li><span>Artificial intelligence Intern</span><br>Tequed Labs <p>• Assisting in the development of machine learning algorithms such as Linear Regression, Logistic Regression, and
+                                K Nearest Neighbors. Responsible for collecting and analyzing data to improve the performance of machine
+                                learning models.</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Master of Computer Science from University Of Colorado, Denver</li>
+                            <li><span>2016</span><br>Bachelor of Computer Science from Bapuji Institute of Engineering and Technology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>AWS Cloud Practitioner</span></li>
+                            <li><span>Machine learning Certified by Stanford University</span></li>
+                            <li><span>Data Structures and Algorithms in Python by Jovian</span></li>
+                            <li><span>C & C++ Certified by National Institute Of Information And Technology</span></li>
+                            <li><span>Fundamentals Of Cloud Security by Palo Alto Network Assessment-Based Certificate</span></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+  <!---------------------------- project---------------- -->
+  <div id="projects">
+    <div class="container">
+        <h1 class=" sub-title">Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-eye"></i>
+                <h2>Assistive System for Blind People Using YOLO</h2>
+                <p>Built a tool that turns the visual world such as video and printed text into the audio world with the potential for informing blind people about 
+                    objects and their spatial positions by converting them into speech</p>
+                    <!------<a href="#">Learn more</a>-------->
+            </div>
+            <div>
+                <i class="fa-solid fa-user-secret"></i>
+                <h2>Fraud Detection in the stock market</h2>
+                <p>Built a project that involves the use of advanced machine learning algorithms to identify
+                    potentially fraudulent activities in the stock market</p>
+                    <!---<a href="#">Learn more</a>------>
+            </div>
+            <div>
+                <i class="fa-solid fa-bug"></i>
+                <h2>Research Paper Phishing Detection Techniques</h2>
+                <p>The paper catalogs the causes of a phishing attack analyzes techniques behind
+                    various phishing attacks, evaluates proposed defense mechanisms, and how they are incorporated in enterprise networks.</p>
+                    <!---<a href="#">Learn more</a>-->
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-----------------conact-------------------------->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>sanmathi.guruprasad@ucdenver.edu</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+1(720)-761-4655</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/sanmathi__rao/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sanmathi-guruprasad-942b3b1b"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download >Download CV</a>
+            </div>
+            <div class="contact-right">
+                <from>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </from>
+            </div>
+        </div>
+    </div>
+  </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){  
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+</body>
+</html>
